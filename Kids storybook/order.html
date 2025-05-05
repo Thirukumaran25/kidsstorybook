@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <title>Document</title>
+</head>
+<style>
+     *{
+        margin: 0;
+        padding: 0;  
+        font-family: "Baloo 2", sans-serif;  
+    }
+    /* HEAD */
+    .head{
+        text-align: center;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .head>div{
+        text-align: center;
+        padding: 5px 30px;
+        font-size: 13px;
+    }
+    .about{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0);
+    }
+
+/* section3 content */
+       .section3{
+        display: flex;
+        margin: 120px;
+        gap: 20px;
+    }
+    
+    .sec3subbx{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    .sec3img{
+        padding: 10px;
+        background-color: #d6d6d8  ;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .sec3img>img:hover{
+        transform: scale(1.1);
+    }
+    .avail{
+        background-color: #129C5E ;
+        color: white;
+        font-size: 12px;
+    }
+    .best{
+        background-color: #197DFF  ;
+        font-size: 40px;
+        color: white;
+        margin-left: 80px;
+    }
+    .offer{
+        background-color: #F85050;
+        font-size: 40px;
+        color: white;
+        margin-left: 80px;
+    }
+/* section4 content */
+.section4{  
+    display: flex;
+    margin: 100px;
+}
+.sec4box1{
+    width: 60%;
+    padding: 20px;
+}
+
+.sec4box2{
+    width: 40%;
+}
+.sec4sbx{
+    width: 100%;
+}
+.sec4subbx{
+    display: flex;
+    gap: 10px;
+}
+.sec4sbx>input{
+    width: 99%;
+    padding: 8px 0px;
+}
+.sec4subbx2>input{
+    width: 100%;
+    padding: 8px 0px;
+}
+.sec4box2{
+    padding-top:25px;
+}
+.sec4box21{
+    display: flex;
+    justify-content: space-between;
+}
+.sec4subbx6{
+    background-color: rgb(67, 67, 67);
+    color: white;
+    padding: 20px;
+}
+.sec4subbx6>input{
+    background-color:transparent;
+    width: 97%;
+    border: 1px solid white;
+    margin: 10px 0px;
+    color: white;
+    padding: 5px;
+}
+.sec4subbx6>button{
+    background-color:transparent;
+    width: 100%;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+}
+.plcbtn{
+    text-decoration: none;
+    color: white;
+}
+.ordernote{
+    height: 130px;
+}
+#credit{
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+#total{
+    border-top: 1px solid rgb(0, 0, 0);
+    padding: 10px 0px;
+}
+#subtotal{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+/* section8 content */
+.section8{
+    position: relative;
+    padding-top: 100px;
+}
+.sec8box1{
+    padding-left: 40px;
+    position: absolute;
+    left: 10px;
+    top: 18px;
+}
+.sec8box2{
+    display: flex;
+    border: 1px solid black;
+    margin: 0px 40px;
+}
+.sec8box3{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.sec8subbx{
+    width: 50%;
+    padding: 40px;
+}
+.sec8subbx>p{
+    font-size: 13px;
+    padding: 8px 0px;
+}
+.sec8subbx3>span{
+    font-size: 13px;
+    padding: 0px 5px;
+}
+.sec8subbx3>i{
+    font-size: 23px;
+    padding: 0px 5px;
+}
+.sec8box1>img{
+    filter: grayscale(100%) brightness(0%);
+}
+
+@media(max-width: 768px){
+        .head{
+            flex-direction: column;
+        }
+
+     /* section3 content */
+     
+    .section3{
+        flex-direction: column;
+        margin: auto;
+    }
+    .sec3subbx{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* section4content */ 
+        .section4{  
+            flex-direction: column;
+            margin: auto;
+            width: auto;
+        }
+        .sec4box1{
+            flex-direction: column;
+            width: auto;
+        }
+        .sec4subbx{
+            flex-direction: column;
+            
+        }
+        .sec4box2{
+            width:auto;
+        }
+         /* section8 content */
+         .sec8box2{
+            flex-direction: column;
+        }
+        .sec8box3{
+            flex-direction: column;
+        }
+        .sec8box1>img{
+            width: 250px;
+        }
+}
+</style>
+<body>
+    <div class="head">
+        <div>HOME</div>
+        <div class="about">EXPLORE</div>
+        <div>ABOUT</div>
+        <div>CONTACT</div>
+    </div>
+    <div class="section3">
+        <div class="sec3box">
+            <div class="sec3img">
+            <img src="/image/img (1).png" alt="..." width="100%">
+            </div>
+            <div class="sec3subbx">
+                <div>
+                <h5 class="">Arthur : Morgan</h5>
+                <p class="">Illustration : Hide and seek</p>
+                <p class="">Genre : kids story</p>
+                </div>
+                <div class="">
+                    <h4 class="">₹400</h4>
+                    <span class="avail">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="sec3box">
+            <div class="sec3img">
+            <img src="/image/img (14).png" alt="..." width="100%">
+            </div>
+            <div class="sec3subbx">
+                <div>
+                    <h5 class="">Arthur : Jhon</h5>
+                    <p class="">Illustration : Giger the Giraffe</p>
+                    <p class="">Genre : Kids story</p>
+                </div>
+                <div class="">
+                    <h4 class="">₹400</h4>
+                    <span class="avail">Available</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<section>
+    <div class="section4">
+        <div class="sec4box1">
+            <h3>Billing Details</h3>
+            <div class="sec4subbx">
+                <div class="sec4sbx">
+                    <label >First Name</label><br>
+                    <input type="text">
+                </div>
+                <div class="sec4sbx">
+                    <label for="">Last Name</label><br>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="sec4subbx">
+                <div class="sec4sbx">
+                    <label for="">Company</label><br>
+                    <input type="text">
+                </div>
+                <div class="sec4sbx">
+                    <label for="">Country/Region</label><br>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="sec4subbx2">
+            <label>Street address*</label><br>
+            <input type="text"> 
+            </div>
+            <div class="sec4subbx">
+                <div class="sec4sbx">
+                    <label >Town/City*</label><br>
+                    <input type="text">
+                </div>
+                <div class="sec4sbx">
+                    <label for="">State*</label><br>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="sec4subbx">
+                <div class="sec4sbx">
+                    <label for="">Zip Code</label><br>
+                    <input type="text">
+                </div>
+                <div class="sec4sbx">
+                    <label for="">Phone*</label><br>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="sec4subbx2">
+            <label>Email*</label><br>
+            <input type="text">
+            </div>
+            <div class="sec4subbx2">
+                <label>Order notes*</label><br>
+                <input class="ordernote" type="text">
+            </div>
+        </div>
+        <div class="sec4box2">
+            <div class="sec4box21" id="subtotal">
+                <h3>Product</h3>
+                <h3>Subtotal</h3>
+            </div><br>
+            <div class="sec4box21">
+                <h5>Illustration: Home Work Yuck</h5>
+                <h5>₹400</h5>
+            </div>
+            <div class="sec4box21">
+                <h5>Illustration: Home Work Yuck</h5>
+                <h5>₹400</h5>
+            </div>
+            <p>Luana Bowl</p>
+            <br>
+            <p>Subtotal</p>
+            <p>Shipping</p><br>
+            <div class="sec4box21" id="total">
+                <h4>Total</h4>
+                <h4>₹800</h4>
+            </div>
+            <div class="sec4subbx6">
+                <h3>Payment</h3>
+                <div class="sec4box21" id="credit">
+                    <div><input type="radio">credit card</div>
+                    <i class='bx bxl-mastercard' style='color:#ff0303'  ></i>
+                </div>
+                <input type="number" placeholder="cardnumber"><br>
+                <input type="text" placeholder="name"><br>
+                <input type="text" placeholder="year">
+                <input type="text" placeholder="code">
+                <button><a class="plcbtn" href="contact4.html">PLACE ORDER</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="section8">
+        <div class="sec8box1">
+            <img src="/image/img (71).png" alt="">
+        </div>
+        <div class="sec8box2">
+            <div class="sec8subbx">
+                <h5>Helpful Resources</h5>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Our Books</p>
+                <p>Gift ideas</p>
+                <p>Reading Tips</p>
+            </div>
+            <div class="sec8subbx">
+                <h5>Stay Connected</h5>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Our Books</p>
+                <p>Gift ideas</p>
+                <p>Reading Tips</p>
+            </div>
+            <div class="sec8subbx">
+                <h5>Newsletter Signup</h5>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Our Books</p>
+                <p>Gift ideas</p>
+                <p>Reading Tips</p>
+            </div>
+        </div>
+        <div class="sec8box3">
+            <div class="sec8subbx3">
+                <span>@2025 Magic books. All rights reserved.</span>
+                <span><u>Privacy Policy</u></span>
+                <span><u>Terms of Service</u></span>
+                <span><u>Cookies setting</u></span>
+            </div>
+            <div class="sec8subbx3">
+                <i class='bx bxl-facebook-circle' style='color:#121212'  ></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-linkedin-square'></i>
+                <i class='bx bxl-youtube' style='color:#121212' ></i>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

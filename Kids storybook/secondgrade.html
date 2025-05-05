@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <title>Document</title>
+</head>
+<style>
+     *{
+        margin: 0;
+        padding: 0;  
+        font-family: "Baloo 2", sans-serif;  
+    }
+    /* section1 content */
+
+    .sec1box3{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    }
+
+    .sec1subbx3>span{
+        font-size: 15px;
+        padding: 0px 5px;
+    }
+    .shop{
+            background-color: rgb(16, 15, 15);
+            color: white;  
+            padding: 5px 10px;
+            text-align: center;
+    }
+    /* HEAD */
+    .head{
+        text-align: center;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .head>div{
+        text-align: center;
+        padding: 5px 30px;
+        font-size: 13px;
+    }
+    .head>a{
+       color: black;
+       text-decoration: none;
+    }
+    .about{
+        background-color: rgb(0, 0, 0);
+        opacity: 0.4;
+        color: white;
+        font-weight: bold;
+        box-shadow: 2px 2px 10px 8px rgba(0, 0, 0);
+    }
+
+/* headinng */
+.heading{
+    margin: 60px;
+}
+.heading>h1{
+   font-size: 40px;
+   padding: 20px
+   0px;
+}
+.heading>p{
+   font-size: 20px;
+}
+    /* section3 content */
+    .section3{
+        display: flex;
+        margin: 30px;
+        gap: 20px;
+    }
+    
+    .sec3subbx{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    .sec3img{
+        padding: 10px;
+        background-color: #d6d6d8  ;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .sec3img>img:hover{
+        transform: scale(1.1);
+    }
+    .buybtn>a{
+        text-decoration: none;
+        color: black;
+    }
+    .buybtn>a:hover{
+        color: rgb(252, 250, 250);
+    }
+    .buybtn{
+        width: 40%;
+        font-size: 15px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    .buybtn:hover{
+        color: white;
+        background-color: #197DFF  ;
+        border: none;
+    }
+    .readbtn{
+        width: 40%;
+        font-size: 15px;
+        padding: 8px;
+        border: 2px solid #EE8500;
+        border-radius: 10px;
+    }
+    .readbtn:hover{
+        color: white;
+        background-color: #EE8500 ;
+        border: none;
+    }
+    .avail{
+        background-color: #129C5E ;
+        color: white;
+        font-size: 12px;
+    }
+    .best{
+        background-color: #197DFF  ;
+        font-size: 40px;
+        color: white;
+        margin-left: 80px;
+    }
+    .offer{
+        background-color: #F85050;
+        font-size: 40px;
+        color: white;
+        margin-left: 80px;
+    }
+
+    /* section4 content */
+.section4{
+    display: flex;
+    padding: 40px;
+    background-color: #e3e1ff  ;
+}
+.sec4box1{
+    margin: 20px;
+}
+.sec4box2{
+    margin: 20px;
+    align-content: center;
+}
+/* section8 content */
+.section8{
+    position: relative;
+    padding-top: 100px;
+}
+.sec8box1{
+    padding-left: 40px;
+    position: absolute;
+    left: 10px;
+    top: 18px;
+}
+.sec8box2{
+    display: flex;
+    border: 1px solid black;
+    margin: 0px 40px;
+}
+.sec8box3{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.sec8subbx{
+    width: 50%;
+    padding: 40px;
+}
+.sec8subbx>p{
+    font-size: 13px;
+    padding: 8px 0px;
+}
+.sec8subbx3>span{
+    font-size: 13px;
+    padding: 0px 5px;
+}
+.sec8subbx3>i{
+    font-size: 23px;
+    padding: 0px 5px;
+}
+.sec8box1>img{
+    filter: grayscale(100%) brightness(0%);
+}
+    @media(max-width: 768px){
+        .head{
+            flex-direction: column;
+        }
+        .heading{
+            margin: auto;
+        }
+    /* section1 content */
+        .sec1box3{
+            flex-direction: column;
+        }
+        .sec1subbx3>span{
+            font-size: 15px;
+            padding: 0px 10px;
+        }
+    /* head content */
+        .head>span{
+        text-align: center;
+        padding: 8px 20px;
+        }
+
+         /* section3 content */
+    .section3{
+        flex-direction: column;
+    }
+    .sec3subbx{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .buybtn,.readbtn{
+        width: auto;
+    }
+    /* section4 content */
+    .section4{
+            flex-direction: column;
+        }
+         /* section8 content */
+         .sec8box2{
+            flex-direction: column;
+        }
+        .sec8box3{
+            flex-direction: column;
+        }
+        .sec8box1>img{
+            width: 250px;
+        }
+    }    
+</style>
+<body>
+    <section>
+        <div class="sec1box3">
+            <div class="sec1subbx3">
+                <span>Book Corner</span>
+                <span>Story Time</span>
+                <span>Explore More</span>
+            </div>
+            <div class="sec1subbx3">
+                <div class="shop">Shop</div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <img src="/image/img (9).png" alt="" width="100%">
+    </div>
+    <div class="head">
+        <a href="index.html"><div>HOME</div></a>
+        <div class="about">EXPLORE</div>
+        <a href="about.html"><div>ABOUT</div></a>
+        <a href="contact.html"><div>CONTACT</div></a>
+    </div>
+    <div class="heading">
+        <h1>SECOND GRADE BOOKS</h1>
+        <P>"Looking for kindergarten Books? You're in the Right Place!"</P>
+    </div>
+    <section>
+        <div class="section3">
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (23).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                    <h5 class="">Arthur : Morgan</h5>
+                    <p class="">Illustration : Hide and seek</p>
+                    <p class="">Genre : kids story</p>
+                    </div>
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (44).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                        <h5 class="">Arthur : Jhon</h5>
+                        <p class="">Illustration : Giger the Giraffe</p>
+                        <p class="">Genre : Kids story</p>
+                    </div>
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (31).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                        <h5 class="">Arthur : Abigail</h5>
+                        <p class="">Illustration : Doing my Chores</p>
+                        <p class="">Genre : Kids motivational</p>
+                    </div> 
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (29).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                    <h5 class="">Arthur : Morgan</h5>
+                    <p class="">Illustration : Hide and seek</p>
+                    <p class="">Genre : kids story</p>
+                    </div>
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (27).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                        <h5 class="">Arthur : Jhon</h5>
+                        <p class="">Illustration : Giger the Giraffe</p>
+                        <p class="">Genre : Kids story</p>
+                    </div>
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (25).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                        <h5 class="">Arthur : Abigail</h5>
+                        <p class="">Illustration : Doing my Chores</p>
+                        <p class="">Genre : Kids motivational</p>
+                    </div> 
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+        </div>
+        <span class="offer">50% OFFER</span>
+        <div class="section3">
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (1).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                    <h5 class="">Arthur : Morgan</h5>
+                    <p class="">Illustration : Hide and seek</p>
+                    <p class="">Genre : kids story</p>
+                    </div>
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (14).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                        <h5 class="">Arthur : Jhon</h5>
+                        <p class="">Illustration : Giger the Giraffe</p>
+                        <p class="">Genre : Kids story</p>
+                    </div>
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (13).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                        <h5 class="">Arthur : Abigail</h5>
+                        <p class="">Illustration : Doing my Chores</p>
+                        <p class="">Genre : Kids motivational</p>
+                    </div> 
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+        </div>
+        <span class="best">Best sellers</span>
+        <div class="section3">
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (29).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                    <h5 class="">Arthur : Morgan</h5>
+                    <p class="">Illustration : Hide and seek</p>
+                    <p class="">Genre : kids story</p>
+                    </div>
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (27).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                        <h5 class="">Arthur : Jhon</h5>
+                        <p class="">Illustration : Giger the Giraffe</p>
+                        <p class="">Genre : Kids story</p>
+                    </div>
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+            <div class="sec3box">
+                <div class="sec3img">
+                <img src="/image/img (25).png" alt="..." width="100%">
+                </div>
+                <div class="sec3subbx">
+                    <div>
+                        <h5 class="">Arthur : Abigail</h5>
+                        <p class="">Illustration : Doing my Chores</p>
+                        <p class="">Genre : Kids motivational</p>
+                    </div> 
+                    <div class="">
+                        <h4 class="">₹400</h4>
+                        <span class="avail">Available</span>
+                    </div>
+                </div>
+                <div class="sec3subbx">
+                    <button class="buybtn"><a href="buy.html">BUY NOW<i class='bx bxs-cart-alt'></i></a></button>
+                    <button class="readbtn">Read now<i class='bx bx-book-open'></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section4">
+            <div class="sec4box1">
+                <img src="/image/img (8).png" alt="" width="100%">
+            </div>
+            <div class="sec4box2">
+                <h1>Discover the joy of reading with</h1>
+                <h1>Our Curated Childrens Book</h1>
+                <h1>Selection</h1>
+                <p>at our store, we nurture a love for reading through engaging and educational</p>
+                <p>selections that spark imagination. Enjoy Convenient delivery option that make</p>
+                <p>it easier than ever to bring the magic of books to your child's doorstep.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="section8">
+            <div class="sec8box1">
+                <img src="/image/img (71).png" alt="">
+            </div>
+            <div class="sec8box2">
+                <div class="sec8subbx">
+                    <h5>Helpful Resources</h5>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Our Books</p>
+                    <p>Gift ideas</p>
+                    <p>Reading Tips</p>
+                </div>
+                <div class="sec8subbx">
+                    <h5>Stay Connected</h5>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Our Books</p>
+                    <p>Gift ideas</p>
+                    <p>Reading Tips</p>
+                </div>
+                <div class="sec8subbx">
+                    <h5>Newsletter Signup</h5>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Our Books</p>
+                    <p>Gift ideas</p>
+                    <p>Reading Tips</p>
+                </div>
+            </div>
+            <div class="sec8box3">
+                <div class="sec8subbx3">
+                    <span>@2025 Magic books. All rights reserved.</span>
+                    <span><u>Privacy Policy</u></span>
+                    <span><u>Terms of Service</u></span>
+                    <span><u>Cookies setting</u></span>
+                </div>
+                <div class="sec8subbx3">
+                    <i class='bx bxl-facebook-circle' style='color:#121212'  ></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-linkedin-square'></i>
+                    <i class='bx bxl-youtube' style='color:#121212' ></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

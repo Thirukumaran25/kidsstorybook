@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <title>Document</title>
+</head>
+<style>
+     *{
+        margin: 0;
+        padding: 0;  
+        font-family: "Baloo 2", sans-serif;  
+    }
+        /* HEAD */
+        .head{
+        text-align: center;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .head>div{
+        text-align: center;
+        padding: 5px 30px;
+        font-size: 13px;
+    }
+    .about{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0);
+    }
+
+ /* section3 content */
+ .section3{
+    border: 1px solid black;
+    margin: 0px 150px;
+ }
+ .sec3box{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+ }
+
+ .expbtn{
+    padding: 10px 40px;
+    color: white;
+    background-color: #121212;
+ }
+ .expbtn>a{
+    text-decoration: none;
+    color: white;
+ }
+ .expbtn1{
+    padding: 20px 150px;
+text-align: end;
+ }
+
+/* section4 content */
+
+/* section8 content */
+.section8{
+    position: relative;
+    padding-top: 100px;
+}
+.sec8box1{
+    padding-left: 40px;
+    position: absolute;
+    left: 10px;
+    top: 18px;
+}
+.sec8box2{
+    display: flex;
+    border: 1px solid black;
+    margin: 0px 40px;
+}
+.sec8box3{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.sec8subbx{
+    width: 50%;
+    padding: 40px;
+}
+.sec8subbx>p{
+    font-size: 13px;
+    padding: 8px 0px;
+}
+.sec8subbx3>span{
+    font-size: 13px;
+    padding: 0px 5px;
+}
+.sec8subbx3>i{
+    font-size: 23px;
+    padding: 0px 5px;
+}
+.sec8box1>img{
+    filter: grayscale(100%) brightness(0%);
+}
+    @media(max-width: 768px){
+        .head{
+            flex-direction: column;
+        }
+
+     /* section3 content */
+     
+    .section3{
+        flex-direction: column;
+        margin: auto;
+    }
+     /* section4 content */
+
+     /* section8 content */
+          .sec8box2{
+            flex-direction: column;
+        }
+        .sec8box3{
+            flex-direction: column;
+        }
+        .sec8box1>img{
+            width: 250px;
+        }
+    }
+</style>
+<body>
+    <div class="head">
+        <div>HOME</div>
+        <div class="about">EXPLORE</div>
+        <div>ABOUT</div>
+        <div>CONTACT</div>
+    </div>
+    <section>
+    <div class="section3">
+        <div class="sec3box">
+            <div>
+                <h1>From Address:</h1>
+                <p>Wood Aesthetics</p>
+                <p>Address of Magic books</p>
+                <p>Street Address</p>
+                <p>City, State,</p>
+                <p>Zip Code</p>
+                <p> Country</p>
+                <p>Phone</p>
+                <p>Email</p>
+            </div>
+            <div>
+                <br>
+                <p>Credit Date: 11/05/2025</p>
+                <p>Credit No: #44566</p>
+                <p>Customer ID/Name: person</p>
+                <p>Invoic No: 444444</p>
+                <p>Order Date:11/05/2025</p>
+                <p>Order No:44444</p>
+                <p>Price:800</p>
+            </div>
+        </div>
+        <div class="sec3box">
+            <div>
+                <h1>To Address:</h1>
+                <p>Billing Address: Address 1</p>
+                <p>Name: person</p>
+                <p>Street Address: address1</p>
+                <p>City, State: bangalore</p>
+                <p>Zip Code: 121</p>
+                <p>Phone:1236459477</p>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    </section>
+    <div class="expbtn1">
+        <button class="expbtn"><a href="explore.html">Explore More</a></button>
+    </div>
+    <footer>
+        <div class="section8">
+            <div class="sec8box1">
+                <img src="/image/img (71).png" alt="">
+            </div>
+            <div class="sec8box2">
+                <div class="sec8subbx">
+                    <h5>Helpful Resources</h5>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Our Books</p>
+                    <p>Gift ideas</p>
+                    <p>Reading Tips</p>
+                </div>
+                <div class="sec8subbx">
+                    <h5>Stay Connected</h5>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Our Books</p>
+                    <p>Gift ideas</p>
+                    <p>Reading Tips</p>
+                </div>
+                <div class="sec8subbx">
+                    <h5>Newsletter Signup</h5>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Our Books</p>
+                    <p>Gift ideas</p>
+                    <p>Reading Tips</p>
+                </div>
+            </div>
+            <div class="sec8box3">
+                <div class="sec8subbx3">
+                    <span>@2025 Magic books. All rights reserved.</span>
+                    <span><u>Privacy Policy</u></span>
+                    <span><u>Terms of Service</u></span>
+                    <span><u>Cookies setting</u></span>
+                </div>
+                <div class="sec8subbx3">
+                    <i class='bx bxl-facebook-circle' style='color:#121212'  ></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-linkedin-square'></i>
+                    <i class='bx bxl-youtube' style='color:#121212' ></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

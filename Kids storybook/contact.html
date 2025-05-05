@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <title>Document</title>
+</head>
+<style>
+     *{
+        margin: 0;
+        padding: 0;  
+        font-family: "Baloo 2", sans-serif;  
+    }
+/* section1 content */
+
+    .sec1box3{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.sec1subbx3>span{
+    font-size: 15px;
+    padding: 0px 5px;
+}
+.shop{
+        background-color: rgb(16, 15, 15);
+        color: white;  
+        padding: 5px 10px;
+        text-align: center;
+}
+
+    /* HEAD */
+    .head{
+        text-align: center;
+        padding: 40px;
+    }
+    .head>span{
+        text-align: center;
+        padding: 8px 30px;
+        font-size: 13px;
+    }
+    .about{
+        background-color: rgb(16, 15, 15);
+        opacity: 0.5;
+        color: white;
+        font-weight: bold;
+        box-shadow: 2px 2px 10px 8px rgba(0, 0, 0);
+    }
+/* section2 content */
+
+/* section3 content */
+.section3{  
+    margin: 100px 280px;
+}
+.sec3box{
+    display: flex;
+    gap: 20px;
+}
+.sec3box>div{
+    width: 100%;
+}
+.sec3box>div>input{
+    width: 100%;
+    padding: 10px 0px;
+}
+.sec3box2{
+    margin: 20px 0px;
+}
+.sec3box2>textarea{
+    width: 100%;
+    height: 140px;
+}
+.sendbtn{
+    width: 100%;
+    height: 40px;
+    background-color: #1a1924  ;
+    color: white;
+}
+
+/* section4 content */
+.section4{
+    margin: 30px 0px;
+}
+.section4>iframe{
+    width: 100%;
+    height: 400px;
+}
+
+/* section3 java */
+.sec3js{
+    margin: 150px;
+    display: flex;
+    align-items: center;
+    display: none;
+    z-index: 1;
+}
+.sec3jsbox{
+    width: 50%;
+    margin: 20px;
+}
+
+/* section6 content */
+
+/* section8 content */
+.section8{
+    position: relative;
+    padding-top: 100px;
+}
+.sec8box1{
+    padding-left: 40px;
+    position: absolute;
+    left: 10px;
+    top: 18px;
+}
+.sec8box2{
+    display: flex;
+    border: 1px solid black;
+    margin: 0px 40px;
+}
+.sec8box3{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.sec8subbx{
+    width: 50%;
+    padding: 40px;
+}
+.sec8subbx>p{
+    font-size: 13px;
+    padding: 8px 0px;
+}
+.sec8subbx3>span{
+    font-size: 13px;
+    padding: 0px 5px;
+}
+.sec8subbx3>i{
+    font-size: 23px;
+    padding: 0px 5px;
+}
+.sec8box1>img{
+    filter: grayscale(100%) brightness(0%);
+}
+  @media(max-width: 768px){
+    /* section1 content */
+        .sec1box3{
+            flex-direction: column;
+        }
+        .sec1subbx3>span{
+            font-size: 15px;
+            padding: 0px 10px;
+        }
+    /* head content */
+        .head>span{
+        text-align: center;
+        padding: 8px 20px;
+        }
+    /* section3 content */
+        .section3{  
+            margin: auto;
+            width: auto;
+        }
+        .sec3box{
+            flex-direction: column;
+            gap: 20px;
+        }
+        .sec3box>div{
+            width: auto;
+        }
+        .sec3box>div>input{
+            width: 95%;
+        }
+        .sec3box2{
+            width:99.4%;
+        }
+        .sec3box2>textarea{
+            width: 100%;
+            height: 140px;
+        }
+        .sendbtn{
+            width: 100%;
+            height: 40px;
+            background-color: #1a1924  ;
+            color: white;
+        }
+        /* section3 java*/
+        .sec3js{
+            margin: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sec3jsbox{
+            width: auto;
+            margin: auto;
+        }
+        /* section4 content */
+        
+        /* section6 content */
+
+         /* section8 content */
+         .sec8box2{
+            flex-direction: column;
+        }
+        .sec8box3{
+            flex-direction: column;
+        }
+        .sec8box1>img{
+            width: 250px;
+        }
+        }
+</style>
+<body>
+    <section>
+        <div class="sec1box3">
+            <div class="sec1subbx3">
+                <span>Book Corner</span>
+                <span>Story Time</span>
+                <span>Explore More</span>
+            </div>
+            <div class="sec1subbx3">
+                <div class="shop">Shop</div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <img src="/image/img (12).png" alt="" width="100%">
+    </div>
+    <div class="head">
+        <span>HOME</span>
+        <span>EXPLORE</span>
+        <span>ABOUT</span>
+        <span class="about">CONTACT</span>
+    </div>
+    <section>
+        <center>
+        <div class="section2">
+            <div>
+                <h1>GET IN TOUCH WITH US</h1>
+                <p>At Magic Books,we belive stories aren't just read-they're lived. Our<br> website is a magical realm where readers of all ages can explore a treasure <br>trove of fantasy, adventure, and imagination. </p>
+            </div>
+            <div>
+                <h4>Office Hours:</h4>
+                <p>Monday-Friday 8.00am to 5.00 pm</p>
+                <h4>Email:</h4>
+                <p>Contact@company.com</p>
+                <h4>Phone:</h4>
+                <p>(414)687-5892</p>
+                <h4>Location:</h4>
+                <p>59 Middle Point Road</p>
+                <p>San francisco,80412</p>
+            </div>
+        </div>
+        </center>
+    </section>
+    <section>
+        <div class="section3" id="feedform">
+                <div class="sec3box">
+                    <div>
+                        <label for="">Name</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Email</label><br>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="sec3box">
+                    <div>
+                        <label for="">Phone</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Company</label><br>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="sec3box2">
+                <label>message</label><br>
+                <textarea></textarea> <br> 
+                </div>
+                <button class="sendbtn" id="feebbckbtn">Send Message</button>    
+        </div>
+        <div class="sec3js" id="feedbackmessage">
+            <div class="sec3jsbox">
+                <img src="/image/img (77).png" alt="" width="100%">
+            </div>
+            <div class="sec3jsbox">
+                <h2>Our team will contact you soon</h2>
+                <h2>We received your message!!</h2>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635432.7294829037!2d-0.5959833999990707!3d51.52864165000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1746249763668!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section>
+        <div class="section5">
+        </div>
+    </section>
+    <section>
+        <div class="section6">
+        </div>
+    </section>
+    <footer>
+        <div class="section8">
+            <div class="sec8box1">
+                <img src="/image/img (71).png" alt="">
+            </div>
+            <div class="sec8box2">
+                <div class="sec8subbx">
+                    <h5>Helpful Resources</h5>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Our Books</p>
+                    <p>Gift ideas</p>
+                    <p>Reading Tips</p>
+                </div>
+                <div class="sec8subbx">
+                    <h5>Stay Connected</h5>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Our Books</p>
+                    <p>Gift ideas</p>
+                    <p>Reading Tips</p>
+                </div>
+                <div class="sec8subbx">
+                    <h5>Newsletter Signup</h5>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Our Books</p>
+                    <p>Gift ideas</p>
+                    <p>Reading Tips</p>
+                </div>
+            </div>
+            <div class="sec8box3">
+                <div class="sec8subbx3">
+                    <span>@2025 Magic books. All rights reserved.</span>
+                    <span><u>Privacy Policy</u></span>
+                    <span><u>Terms of Service</u></span>
+                    <span><u>Cookies setting</u></span>
+                </div>
+                <div class="sec8subbx3">
+                    <i class='bx bxl-facebook-circle' style='color:#121212'  ></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-linkedin-square'></i>
+                    <i class='bx bxl-youtube' style='color:#121212' ></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        let feedform=document.getElementById("feedform")
+        let feebbckbtn=document.getElementById("feebbckbtn")
+        let feedbackmessage=document.getElementById("feedbackmessage")
+
+        feebbckbtn.addEventListener("click",function(){
+            feedbackmessage.style.display="block"
+            feedbackmessage.style.display="flex"
+            feedform.style.display="none"
+        })
+    </script>
+</body>
+</html>
